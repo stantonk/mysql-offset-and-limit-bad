@@ -16,17 +16,20 @@ batch_read.py: script that demonstrates both good and bad queries
 When you run batch_read.py on your test table, the bad query will print
 out progressively increasing query times, e.g.
 
+```
 (101L, '3890_1528', 'goodbye') 1.040 ms
 ...
 (25601L, '7653_9863', 'good day!') 13.365 ms
 ...
 (90501L, '9677_6312', 'goodbye') 47.163 ms
-
+```
 
 The good query, however, maintains a constant query execution time:
 
+```
 (101L, '3890_1528', 'goodbye') 0.486 ms
 ...
 (25601L, '7653_9863', 'good day!') 0.391 ms
 ...
 (90501L, '9677_6312', 'goodbye') 0.374 ms
+```
